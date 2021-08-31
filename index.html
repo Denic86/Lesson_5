@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_5</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="header__nav">
+			<ul>
+				<li><a href="#part1">>Длина и ширина</a></li>
+				<li><a href="#part2">>Отступы</a></li>
+				<li><a href="#part3">>Великий <span>Display</span></a></li>
+				<li><a href="#part4">>Отрицательный <span>margin</span></a></li>
+				<li><a href="#part5">>Сломанная строка</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2 id="part1" class="title">Длина и ширина</h2>
+		<span class="part1__string">Я строка, а это значит что мои внешние отступы сверху и внизу не работают, а горизонтальные внешние отступы - только на
+		маленькое расстояние!</span>
+		<div class="part1__block">
+			Блок, просто блок. Я не меняю свою ширину!
+		</div>
+		<div class="part1__block-2">
+			<p>Тоже просто блок, и тоже не меняю свою ширину! Но буквы за моими границами не видны. !!!Немного колхоза!!!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto hic molestiae repellendus quibusdam odit, consequuntur explicabo unde. Totam nam in exercitationem. Odit, et ad. Mollitia deserunt sequi expedita tempore.</p>
+		</div>
+		<div class="part1__block-3">
+			<p>Я тоже просто блок, и тоже не меняю свою ширину! Но буквы за моими границами можно увидеть, просто используй полосы
+			прокрутки!</p>
+		</div>
+		<span class="part1__string-2">Строка. Моя ширина не работает и высота :( Отступы сверху и снизу тоже, но работает отступ слева :) Для бэка увеличили межстрочный интервал</span>
+		<div class="wmin1000">
+			<p>А моя ширина не меньше чем 1000px, проверь.</p>
+		</div>
+		<div class="wmax1000">
+			<p>Моя ширина не больше чем 1000px!</p>
+		</div>
+		<div class="hmax100">
+			<p>Моя высота не больше чем 100px!<br>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facilis inventore qui, id magni repellendus ratione officiis omnis porro tenetur minima officia eligendi laudantium ut eos. Adipisci iusto aut impedit!Loremlorem</p>
+		</div>
+		<div class="hmax200wmax300">
+			Тут ограничена высота - 200 и длина - 300. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste temporibus architecto ducimus tempora eaque incidunt? Quisquam, voluptatem quam. Ipsum non dolore optio, sed dolor repudiandae eaque libero amet quia vitae.
+		</div>
+		<h2 id="part2" class="title">Отступы</h2>
+		<div class="padding-1" >
+			Внутренние оступы. <br>
+			Padding: 50px 40px 50px 60px <br>
+			paddig-top: 50px;<br>
+			padding-right: 40px;<br>
+			padding-bottom: 50px;<br>
+			padding-left: 60px;
+		</div>
+		<div class="padding-2">
+			Внутренние оступы. <br>
+			padding: 50px 80px 60px;<br>
+			padding-top: 50px;<br>
+			padding-right: 80px;<br>
+			padding-bottom: 60px;<br>
+			padding-left: 80px;
+		</div>
+		<div class="padding-3">
+			Внутренние оступы. <br>
+			padding: 50px 80px;<br>
+			padding-top: 50px;<br>
+			padding-right: 80px;<br>
+			padding-bottom: 50px;<br>
+			padding-left: 80px;
+		</div>
+		<div class="padding-4">
+			<p>Внутренние оступы. <br>
+			padding: 50px;<br>
+			padding-top: 50px;<br>
+			padding-right: 50px;<br>
+			padding-bottom: 50px;<br>
+			padding-left: 50px;</p>
+		</div>
+		<div class="margin-1">
+			Внешние отступы <br>
+			margin: 50px 40px 50px 80px; <br>
+			margin-top: 50px; <br>
+			margin-right: 40px;<br>
+			margin-bottom: 50px;<br>
+			margin-left: 80px;
+		</div>
+		<div class="margin-2">
+			Внешние отступы <br>
+			margin: 50px 80px 60px;<br>
+			margin-top: 50px;<br>
+			margin-right: 80px;<br>
+			margin-bottom: 60px;<br>
+			margin-left: 80px;
+		</div>
+		<div class="margin-3">
+			Внешние отступы <br>
+			margin: 50px 80px;<br>
+			margin-top: 50px;<br>
+			margin-right: 80px;<br>
+			margin-bottom: 50px;<br>
+			margin-left: 80px;
+		</div>
+		<div class="margin-4">
+			Внешние отступы <br>
+			margin: 50px;<br>
+			margin-top: 50px;<br>
+			margin-right: 50px;<br>
+			margin-bottom: 50px;<br>
+			margin-left: 50px;
+		</div>
+		<h2 id="part3" class="title">Великий Display</h2>
+		<span class="part3__span">!№"% Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, corporis!</span><span class="part3__span-2">В одной строке, так как строчные элементы. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, in!</span>
+		<span class="block-1">
+			Мы уже блочные! ***display: block;***
+		</span>
+		<div class="block-2">
+			Я строчный блок. Верхний и нижний margin не работает.
+		</div>
+		<span class="inline-b">А я строчно-блочная строка</span>
+		<h2 id="part4" class="title">Отрицательный margin</h2>
+		<div class="-margin">
+			<p class="test1">Тест</p>
+			<p class="test2">Я</p>
+			<p class="test3">Создан</p>
+			<p class="test4">Отрицательным</p>
+			<p class="test5">margin</p>
+		</div>
+		<h2 id="part5" class="title">>Сломанная строка</h2>
+		<span class="part5__string">Я сломан Я сломан Я сломан Я сломан Я сломан Я сломанЯ сломан Я сломан Я сломан Я сломан Я сломан Я сломан Я сломан Я сломан Я сломан Я сломан Я сломан Я сломан</span>
+	</main>
+</body>
+</html>
